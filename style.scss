@@ -1178,7 +1178,7 @@ body::before {
           transform: translate(-264%, -320%);
         }
         .man {
-          width: 100% !important;
+          width: 86% !important;
           &::after {
             // display: none;
             width: 100px;
@@ -1189,7 +1189,7 @@ body::before {
       }
       .scroll-down-instruct {
         right: 2%;
-        bottom: 5%;
+        bottom: 3%;
         .scroll-down-instruct__text {
           h4 {
             font-size: 0.8rem;

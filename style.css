@@ -1322,7 +1322,7 @@ body::before {
             transform: translate(-264%, -320%);
   }
   body .hero .design-right-section .man {
-    width: 100% !important;
+    width: 86% !important;
   }
   body .hero .design-right-section .man::after {
     width: 100px;
@@ -1331,7 +1331,7 @@ body::before {
   }
   body .hero .scroll-down-instruct {
     right: 2%;
-    bottom: 5%;
+    bottom: 3%;
   }
   body .hero .scroll-down-instruct .scroll-down-instruct__text h4 {
     font-size: 0.8rem;
