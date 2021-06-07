@@ -1166,9 +1166,9 @@ body::before {
   }
   body .hero .info-column {
     padding: 0 1.5rem;
-    -webkit-box-flex: 1.5;
-        -ms-flex: 1.5;
-            flex: 1.5;
+    -webkit-box-flex: 1.6;
+        -ms-flex: 1.6;
+            flex: 1.6;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
