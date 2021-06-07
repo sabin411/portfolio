@@ -1236,6 +1236,7 @@ body::before {
     display: none;
   }
   body .hero .design-right-section .man {
+    padding: 1rem 0 0 0;
     position: static;
     width: 100%;
     -webkit-transform: translate(0, 0);
