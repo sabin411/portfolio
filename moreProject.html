@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./moreProjectStyle.css" />
+  </head>
+  <body>
+    <div class="more-project-container">
+      <div class="more-project-container__header">
+        <div class="header-wrapper">
+          <h1>
+            I Create Digital <br />
+            Products
+          </h1>
+        </div>
+        <div class="subheader-wrapper">
+          <h4>
+            I am capable of creating all the products mentioned below from
+            scratch.
+          </h4>
+        </div>
+      </div>
+      <div class="more-project-container__projects">
+        <div class="project-wrapper">
+          <a
+            class="img-wrapper"
+            href="https://sabin411.github.io/fontend-mentor-first-challenge/"
+          >
+            <img src="./image/project1.png" alt="" />
+          </a>
+          <h4 class="project-info">
+            I recently found a site where, you are given a UI design and you are
+            challenged to develop it by accepting that challenge. And it is one
+            of them, my first one.
+          </h4>
+          <h2 class="project-name">Front-end Mentor Challenge</h2>
+          <a
+            href="https://github.com/sabin411/fontend-mentor-first-challenge.git"
+            class="btn source-code__btn"
+            >Source Code</a
+          >
+        </div>
+        <div class="project-wrapper">
+          <a
+            class="img-wrapper"
+            href="https://trusting-morse-4d0a2c.netlify.app"
+          >
+            <img src="./image/project2.png" alt="" />
+          </a>
+          <h4 class="project-info">
+            This is the landing page of "SoftNep IT company" of Nepal, I really
+            loved the UI design of this website so I wanted to design this
+            website on my own, then I sat and built it.
+          </h4>
+          <h2 class="project-name">SoftNep Clone</h2>
+          <a
+            href="https://trusting-morse-4d0a2c.netlify.app"
+            class="btn source-code__btn"
+            >Source Code</a
+          >
+        </div>
+        <div class="project-wrapper">
+          <a
+            class="img-wrapper"
+            href="https://sabin411.github.io/RandomWebsite/"
+          >
+            <img src="./image/project3.png" alt="" />
+          </a>
+          <h4 class="project-info">
+            This is my very beginning work. One day I was just sitting infront
+            of my computer out-of-blue, started coding and cameup with this. I
+            had learned about some UX and I implemented it. I used Jquery for
+            this.
+          </h4>
+          <h2 class="project-name">Random Website</h2>
+          <a
+            href="https://github.com/sabin411/RandomWebsite.git"
+            class="btn source-code__btn"
+            >Source Code</a
+          >
+        </div>
+        <div class="project-wrapper">
+          <a
+            class="img-wrapper"
+            href="https://github.com/sabin411/Lyricsclone.git"
+          >
+            <img src="./image/project4.png" alt="" />
+          </a>
+          <h4 class="project-info">
+            This is also my very beginning work. I cloned one of the lyric's
+            website.
+          </h4>
+          <h2 class="project-name">Lyrics webClone</h2>
+          <a
+            href="https://sabin411.github.io/Lyricsclone/"
+            class="btn source-code__btn"
+            >Source Code</a
+          >
+        </div>
+      </div>
+    </div>
+    <section class="project__talkMe">
+      <div class="talkMe__wrapper">
+        <div class="project__talkMe__left">
+          <h1>Let me in into your company, as an intern.</h1>
+          <p>Desperately waiting to sprout my skill.</p>
+          <a href="" class="talkme-btn">
+            LET'S TALK <span class="plus-btn"><i class="fas fa-plus"></i></span
+          ></a>
+        </div>
+        <div class="project__talkMe__right">
+          <div class="project__talkMe__right-img-wrapper">
+            <img src="./image/more-project-img/letstalkimg.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const talkme = document.querySelector(".talkme-btn");
+      talkme.addEventListener("click", () => {
+        window.open(
+          "mailto:sherasabin411@gmail.com?subject=Regarding Intership&body=I would like to invite you as an inter in this company."
+        );
+      });
+    </script>
+  </body>
+</html>

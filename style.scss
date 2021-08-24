@@ -357,8 +357,10 @@ body::before {
   position: relative;
   display: grid;
   grid-template-columns: 10% 1fr;
+  grid-template-rows: 1fr 5vh;
   padding-right: 1.18rem;
   margin-top: 2rem;
+  padding-bottom: 1rem;
   .section-header {
     color: var(--darker-purple);
     font-size: 30px;
@@ -522,6 +524,30 @@ body::before {
       border-radius: 50%;
       opacity: 0.4;
     }
+  }
+  // change branch feature-a
+  .project-container__more-project {
+    justify-content: center;
+    align-items: center;
+    // width: 100%;
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    // padding-bottom: 2rem;
+    margin-left: 10%;
+    a {
+      display: block;
+      color: var(--darker-purple);
+      font-weight: 600;
+      border-radius: 10px;
+      background-size: 100% auto;
+      padding: 0.5rem;
+      span {
+        margin-left: 0.2rem;
+      }
+    }
+    // margin-bottom: 3rem;
   }
 }
 // about section styling

@@ -1,0 +1,419 @@
+:root {
+  --primary-purple: #6d00b7;
+  --smoke-white: #f5f5f5;
+  --darker-purple: #4800a8;
+  --primary-black: #21272f;
+  --medium-black: #464646;
+  --darker-black: #000;
+  --gray: #8f8f8f;
+  --soft-gray: #b6b6b6;
+  --white: #fff;
+  --gradient-dark-purple: rgb(72, 0, 168);
+  --gradient-primary-purple: rgb(109, 0, 183);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  font-family: "Montserrat";
+  background-color: var(--white);
+  &::after {
+    position: fixed;
+    content: "HIRE ME";
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 900;
+    color: var(--primary-black);
+    opacity: 0.2;
+    font-size: 150px;
+    z-index: -2;
+    transition: all 0.2s;
+  }
+  .more-project-container {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    .more-project-container__header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      .header-wrapper {
+        flex: 1;
+        h1 {
+          color: var(--darker-purple);
+          font-size: calc(3 * 16px);
+        }
+      }
+      .subheader-wrapper {
+        flex: 0.5;
+        h4 {
+          font-size: 14px;
+          color: var(--medium-black);
+          font-weight: 500;
+        }
+      }
+    }
+    .more-project-container__projects {
+      margin: 5rem 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .project-wrapper {
+        background-color: white;
+        position: relative;
+        min-height: 500px;
+        width: 410px;
+        margin: 1.5rem auto;
+        padding: 1.9em 1rem;
+        border-radius: 1px;
+        box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        .img-wrapper {
+          position: relative;
+          display: inline-block;
+          height: auto;
+          width: 100%;
+          margin-bottom: 2rem;
+          z-index: 1;
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+        h4.project-info {
+          font-weight: 500;
+          font-size: 14px;
+          color: var(--medium-black);
+          letter-spacing: 0.05em;
+          margin-bottom: 0.5rem;
+          margin-left: 0.9rem;
+        }
+        h2.project-name {
+          color: var(--primary-black);
+          margin-bottom: 1.5rem;
+          font-size: 22px;
+          margin-left: 0.9rem;
+        }
+        .btn {
+          border-radius: 7px;
+          padding: 0.5rem 1.2rem;
+          border: none;
+          color: var(--primary-purple);
+          font-weight: 600;
+          letter-spacing: 0.09em;
+          font-size: 0.9rem;
+          text-decoration: none;
+          transition: all 0.5s linear;
+          position: relative;
+          font-size: 1rem;
+          display: inline-block;
+          margin: 0.5rem 0;
+          border-bottom: 1px solid var(--primary-purple);
+          border-right: 1px solid var(--primary-purple);
+          margin-left: 0.9rem;
+          transition: all 1s;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          height: 200px;
+          width: 200px;
+          background-color: var(--darker-purple);
+          top: -80px;
+          left: -80px;
+          border-radius: 50%;
+          z-index: 0;
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          height: 250px;
+          width: 250px;
+          border: 2px solid var(--darker-purple);
+          top: -100px;
+          left: -100px;
+          border-radius: 50%;
+          z-index: 0;
+        }
+      }
+    }
+  }
+  .project__talkMe {
+    min-height: 60vh;
+    height: 60vh;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--smoke-white);
+    .talkMe__wrapper {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      .project__talkMe__left {
+        flex: 1;
+        margin-right: 1.5rem;
+        h1 {
+          font-size: 37px;
+          color: var(--primary-black);
+          font-weight: 700;
+          margin-bottom: 1.5rem;
+        }
+        p {
+          font-weight: 500;
+          color: var(--gray);
+          margin-bottom: 2rem;
+        }
+        a {
+          display: inline-block;
+          width: auto;
+          position: relative;
+          text-decoration: none;
+          color: var(--primary-black);
+          font-weight: 600;
+          font-size: 13px;
+          padding: 0.4rem 0.5rem;
+          // border: 1px solid black;
+          border-radius: 15px;
+          z-index: 1;
+          overflow: hidden;
+          .plus-btn {
+            margin-left: 0.5rem;
+          }
+          &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 28px;
+            background-color: rgb(226, 226, 226);
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+            z-index: -1;
+            transition: all 0.5s ease-in-out;
+          }
+          &:hover::after {
+            width: 100%;
+            border-radius: 0;
+          }
+        }
+      }
+      .project__talkMe__right {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .project__talkMe__right-img-wrapper {
+          width: 100%;
+          height: 80%;
+          padding: 1rem 0.9rem;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1356px) {
+  body {
+    &::after {
+      font-size: 100px;
+      top: 17%;
+    }
+  }
+}
+@media screen and (max-width: 1140px) {
+  body {
+    .more-project-container {
+      .more-project-container__projects {
+        .project-wrapper {
+          margin: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 904px) {
+  body {
+    &::after {
+      font-size: 80px;
+      top: 25%;
+    }
+    .more-project-container {
+      .more-project-container__header {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        .header-wrapper {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .project__talkMe {
+      height: auto;
+      .talkMe__wrapper {
+        padding: 2rem 0;
+        flex-direction: column;
+        .project__talkMe__left {
+          text-align: center;
+          margin-right: 0;
+          padding: 1rem 0.9rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 723px) {
+  body {
+    &::after {
+      font-size: 50px;
+      top: 26%;
+    }
+    .more-project-container {
+      padding: 2rem 0;
+      .more-project-container__header {
+        .header-wrapper {
+          h1 {
+            font-size: calc(3 * 14px);
+          }
+        }
+        .subheader-wrapper {
+          h4 {
+            font-size: 13px;
+          }
+        }
+      }
+      .more-project-container__projects {
+        .project-wrapper {
+          height: auto;
+          min-height: auto;
+          width: 370px;
+          margin: 1rem;
+        }
+      }
+    }
+    .project__talkMe {
+      .talkMe__wrapper {
+        .project__talkMe__left {
+          padding: 0;
+          margin-bottom: 1.5rem;
+          h1 {
+            font-size: 33px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .project__talkMe__right {
+          .project__talkMe__right-img-wrapper {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 510px) {
+  body {
+    &::after {
+      top: 26%;
+      font-size: 45px;
+    }
+    .more-project-container {
+      .more-project-container__header {
+        .header-wrapper {
+          h1 {
+            font-size: calc(3 * 13px);
+          }
+        }
+        .subheader-wrapper {
+          h4 {
+            font-size: 12px;
+          }
+        }
+      }
+      .more-project-container__projects {
+        .project-wrapper {
+          width: 100%;
+          margin: 1rem;
+          padding: 1.2rem 0.9rem;
+          .img-wrapper {
+            margin-bottom: 1rem;
+          }
+          h4.project-info {
+            font-size: 13px;
+          }
+          h2.project-name {
+            font-size: 18px;
+            margin-bottom: 1.1rem;
+          }
+          .btn {
+            font-size: 0.9rem;
+            margin: 0.4rem 0;
+            margin-left: 0.9rem;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .project__talkMe {
+      .talkMe__wrapper {
+        .project__talkMe__left {
+          h1 {
+            font-size: 28px;
+            margin-bottom: 1.2rem;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 510px) {
+  body {
+    &::after {
+      font-size: 40px;
+    }
+    .more-project-container {
+      .more-project-container__header {
+        .header-wrapper {
+          h1 {
+            font-size: calc(3 * 11px);
+          }
+        }
+      }
+    }
+    .project__talkMe {
+      .talkMe__wrapper {
+        .project__talkMe__left {
+          h1 {
+            font-size: 23px;
+          }
+        }
+      }
+    }
+  }
+}
